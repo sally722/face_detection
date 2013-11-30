@@ -16,3 +16,4 @@ if j<n_block_col
     neighbor_idx(4)=sub2ind([n_block_row, n_block_col],i,j+1);
 end
     
+neighbor_idx(neighbor_idx==0)=[];

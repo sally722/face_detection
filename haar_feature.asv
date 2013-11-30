@@ -2,7 +2,7 @@ close all;
 fclose all;
 clc;
 clear;
-dbstop error;
+
 
 filepath='C:\Users\Bingqing\Documents\GitHub\face_detection\Profile Face Images\profile_images1\air-force.1.pgm';
 
@@ -46,5 +46,5 @@ figure(3);imagesc(feature);
 groundtruth=-ones(1,n_block_row*n_block_col);
 
 num_feature=size(feature,1);
-theta=ones(1+num_feature+(num_feature+1)*num_feature/2+2*num_feature,1);
+theta=ones(2*num_feature);
 loglh=loglikelihood(theta,feature,groundtruth,n_block_row, n_block_col)

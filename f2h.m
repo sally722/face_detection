@@ -1,4 +1,4 @@
-function feature_extend = feature_quad(feature)
+function feature_extend = f2h(feature)
 
 [n_feature, n_site]=size(feature);
 
